@@ -15,18 +15,19 @@ namespace OnlineShop.Mode.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]//thuoc tinh tu dong tang cho ID
         public int ID { set; get; }
         [Required]
+        [MaxLength(50)]
         public string Name { set; get; }
-        [Required]
+        [MaxLength(50)]
         public string Department { set; get; }
-        [Required]
+        [MaxLength(50)]
         public string Skype { set; get; }
-        [Required]
+        [MaxLength(50)]
         public string Mobile { set; get; }
-        [Required]
+        [MaxLength(50)]
         public string Email { set; get; }
-        [Required]
+        [MaxLength(50)]
         public string Yahoo { set; get; }
-        [Required]
+        [MaxLength(50)]
         public string Facebook { set; get; }
         public bool? Status { set; get; }
     }
