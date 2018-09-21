@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnlineShop.Mode.Abstract;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Mode.Models
 {
-    [Table("Slides")]
-   public class Slide
+    [Table("PostCategories")]
+   public class PostCategorie : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -18,16 +19,16 @@ namespace OnlineShop.Mode.Models
         [MaxLength(256)]
         public string Name { set; get; }
         [Required]
+        [Column(TypeName = "varchar")]
         [MaxLength(256)]
+        public string Alias { set; get; }
+        [MaxLength(500)]
         public string Description { set; get; }
-        [Required]
+        public int? PrentID { set; get; }
+        public int? DisplayOrder { set; get; }
         [MaxLength(256)]
         public string Image { set; get; }
-        [MaxLength(256)]
-        public string URL { set; get; }
-        public int? DisplayOrder { set; get; }
-        [Required]
-        public bool Status { set; get; }
-
+        public bool HomeFlag { set; get; }
+        public virtual IEnumerable<Post> Posts { set; get; }
     }
 }

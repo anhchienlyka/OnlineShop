@@ -11,11 +11,10 @@ namespace OnlineShop.Mode.Models
     [Table("VisitorStatistics")]
    public class VisitorStatistic
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { set; get; }
+        [Key]      
+        public Guid ID { set; get; }
         public DateTime VisitorDate { set; get; }
-        [Required]
+       [MaxLength(50)]
         public string IPAddress { set; get; }
     }
 }
