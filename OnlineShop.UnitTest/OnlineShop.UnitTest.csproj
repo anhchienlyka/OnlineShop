@@ -61,9 +61,9 @@
       <Project>{347a8e4d-dd9a-400c-8539-202f88acc845}</Project>
       <Name>OnlineShop.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OnlineShop.Mode\OnlineShop.Mode.csproj">
+    <ProjectReference Include="..\OnlineShop.Mode\OnlineShop.Model.csproj">
       <Project>{f8f126e6-00f6-489b-87a2-b2f3dfedd164}</Project>
-      <Name>OnlineShop.Mode</Name>
+      <Name>OnlineShop.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\OnlineShop.Service\OnlineShop.Service.csproj">
       <Project>{90468717-4378-4839-bbc4-ed37ddad845e}</Project>
