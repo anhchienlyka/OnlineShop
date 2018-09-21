@@ -16,12 +16,17 @@ namespace OnlineShop.Mode.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]//thuoc tinh tu dong tang cho ID
         public int ID { set; get; }
         [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
         [Required]
+        [MaxLength(256)]
+
         public string Alias { set; get; }
+        [MaxLength(500)]
         public string Description { set; get; }
         public int? PrentID { set; get; }
         public int? DisplayOrder { set; get; }
+        [MaxLength(256)]
         public string Image { set; get; }
 
         public bool? HomeFlag { set; get; }
