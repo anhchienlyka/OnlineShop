@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Mode.Models
 {
-    [Table("Tags")]
-   public class Tag
+    [Table("ApplicationGroups")]
+    public class ApplicationGroup
     {
         [Key]
-        [MaxLength(50)]
-        [Column(TypeName = "varchar")]
-        public string ID { set; get; }
-        [Required]
-        [MaxLength(50)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { set; get; }
+
+        [StringLength(250)]
         public string Name { set; get; }
-        [Required]
-        [MaxLength(50)]
-        public string Type { set; get; }
+
+        [StringLength(250)]
+        public string Description { set; get; }
     }
 }

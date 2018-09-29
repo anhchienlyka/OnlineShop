@@ -8,26 +8,26 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Mode.Models
 {
-    [Table("Slides")]
-   public class Slide
+    [Table("Feedbacks")]
+    public class Feedback
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
+
+        [StringLength(250)]
         [Required]
-        [MaxLength(256)]
         public string Name { set; get; }
-        [Required]
-        [MaxLength(500)]
-        public string Description { set; get; }
-        [Required]
-        [MaxLength(256)]
-        public string Image { set; get; }
-        [MaxLength(256)]
-        public string URL { set; get; }
-        public int? DisplayOrder { set; get; }
+
+        [StringLength(250)]
+        public string Email { set; get; }
+
+        [StringLength(500)]
+        public string Message { set; get; }
+
+        public DateTime CreatedDate { set; get; }
+
         [Required]
         public bool Status { set; get; }
-
     }
 }

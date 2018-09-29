@@ -11,9 +11,11 @@ namespace OnlineShop.Mode.Models
     [Table("OrderDetails")]
   public  class OrderDetail
     {
-        [Key]       
+        [Key]   
+        [Column(Order=1)]    
         public int OrderID { get; set; }
         [Key]
+        [Column(Order = 2)]
         public int ProdcutID { get; set; }
 
         public int Quantity { set; get; }

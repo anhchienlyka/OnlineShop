@@ -15,9 +15,10 @@ namespace OnlineShop.Data.Infrastructure
         // Marks an entity as modified
         void Update(T entity);
 
+
         // Marks an entity to be removed
         T Delete(T entity);
-
+         
         T Delete(int id);
 
         //Delete multi records
