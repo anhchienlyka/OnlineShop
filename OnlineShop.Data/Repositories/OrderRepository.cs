@@ -2,7 +2,7 @@
 using OnlineShop.Mode.Models;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-
+using OnlineShop.Common.ViewModels;
 namespace OnlineShop.Data.Repositories
 {
     public interface IOrderRepository : IRepository<Order>
