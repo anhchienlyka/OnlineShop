@@ -41,7 +41,7 @@ namespace OnlineShop.Mode.Models
         public bool? HotFlag { set; get; }
         public int? ViewCount { set; get; }
 
-        [ForeignKey("CategoryID")]
+        [ForeignKey("CategoryeID")]
         public virtual PostCategorie PostCategory { set; get; }
 
         public virtual IEnumerable<PostTag> PostTags { set; get; }

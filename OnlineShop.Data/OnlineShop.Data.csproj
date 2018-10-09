@@ -60,6 +60,14 @@
     <Compile Include="Migrations\201809270949447_InitialDB.Designer.cs">
       <DependentUpon>201809270949447_InitialDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810091524428_AddErrorTable.cs" />
+    <Compile Include="Migrations\201810091524428_AddErrorTable.Designer.cs">
+      <DependentUpon>201810091524428_AddErrorTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810091527240_AddFeedbackTable.cs" />
+    <Compile Include="Migrations\201810091527240_AddFeedbackTable.Designer.cs">
+      <DependentUpon>201810091527240_AddFeedbackTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OnlineShopDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,6 +110,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201809270949447_InitialDB.resx">
       <DependentUpon>201809270949447_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810091524428_AddErrorTable.resx">
+      <DependentUpon>201810091524428_AddErrorTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810091527240_AddFeedbackTable.resx">
+      <DependentUpon>201810091527240_AddFeedbackTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
