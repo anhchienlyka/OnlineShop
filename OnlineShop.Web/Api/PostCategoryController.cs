@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using OnlineShop.Mode.Models;
 namespace OnlineShop.Web.Api
 {
     [RoutePrefix("api/postcategory")]
@@ -48,7 +48,7 @@ namespace OnlineShop.Web.Api
                 }
                 else
                 {
-                    PostCategory newPostCategory = new PostCategory();
+                    PostCategorie newPostCategory = new PostCategorie();
                     newPostCategory.UpdatePostCategory(postCategoryVm);
 
                     var category = _postCategoryService.Add(newPostCategory);
