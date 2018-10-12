@@ -12,10 +12,10 @@ using System.Web.Http;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
 using OnlineShop.Data;
-using Microsoft.AspNet.Identity;
-using OnlineShop.Mode.Models;
-using Microsoft.Owin.Security;
-using Microsoft.Owin.Security.DataProtection;
+//using Microsoft.AspNet.Identity;
+//using OnlineShop.Mode.Models;
+//using Microsoft.Owin.Security;
+//using Microsoft.Owin.Security.DataProtection;
 using System.Web;
 
 [assembly: OwinStartup(typeof(OnlineShop.Web.App_Start.Startup))]
@@ -42,11 +42,11 @@ namespace OnlineShop.Web.App_Start
             builder.RegisterType<OnlineShopDBContext>().AsSelf().InstancePerRequest();
 
             //Asp.net Identity
-            builder.RegisterType<ApplicationUserStore>().As<IUserStore<ApplicationUser>>().InstancePerRequest();
-            builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
-            builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
-            builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
-            builder.Register(c => app.GetDataProtectionProvider()).InstancePerRequest();
+            //builder.RegisterType<ApplicationUserStore>().As<IUserStore<ApplicationUser>>().InstancePerRequest();
+            //builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
+            //builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
+            //builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
+            //builder.Register(c => app.GetDataProtectionProvider()).InstancePerRequest();
 
 
             // Repositories
