@@ -1,12 +1,15 @@
-﻿namespace OnlineShop.Mode.Models
-{
-    //public class ApplicationRole : IdentityRole
-    //{
-    //    public ApplicationRole() : base()
-    //    {
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System.ComponentModel.DataAnnotations;
 
-    //    }
-    //    [StringLength(250)]
-    //    public string Description { set; get; }
-    //}
+namespace OnlineShop.Mode.Models
+{
+    public class ApplicationRole : IdentityRole
+    {
+        public ApplicationRole() : base()
+        {
+
+        }
+        [StringLength(250)]
+        public string Description { set; get; }
+    }
 }
