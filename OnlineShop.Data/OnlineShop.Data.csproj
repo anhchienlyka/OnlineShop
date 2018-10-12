@@ -76,6 +76,10 @@
     <Compile Include="Migrations\201810091527240_AddFeedbackTable.Designer.cs">
       <DependentUpon>201810091527240_AddFeedbackTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810121018454_Intergrate-AspnetIdentity.cs" />
+    <Compile Include="Migrations\201810121018454_Intergrate-AspnetIdentity.Designer.cs">
+      <DependentUpon>201810121018454_Intergrate-AspnetIdentity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OnlineShopDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810091527240_AddFeedbackTable.resx">
       <DependentUpon>201810091527240_AddFeedbackTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810121018454_Intergrate-AspnetIdentity.resx">
+      <DependentUpon>201810121018454_Intergrate-AspnetIdentity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
