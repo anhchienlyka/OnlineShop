@@ -24,4 +24,3 @@ namespace OnlineShop.Web.Models
         public bool Stactic { set; get; }
     }
 }
-}
