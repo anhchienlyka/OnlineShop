@@ -4,12 +4,12 @@ namespace OnlineShop.Data.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-
+    using Common;
     internal sealed class Configuration : DbMigrationsConfiguration<OnlineShop.Data.OnlineShopDBContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(OnlineShop.Data.OnlineShopDBContext context)

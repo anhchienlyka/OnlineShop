@@ -11,5 +11,6 @@ namespace OnlineShop.Mode.Models
         }
         [StringLength(250)]
         public string Description { set; get; }
+        public  string Id { get; set; }
     }
 }
