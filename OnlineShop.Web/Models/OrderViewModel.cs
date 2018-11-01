@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -27,6 +28,10 @@ namespace OnlineShop.Web.Models
         public string CreatedBy { set; get; }
         public string PaymentStatus { set; get; }
         public bool Status { set; get; }
-        public virtual IEquatable<OrderDetailViewModel> OrderDetails { set; get; }
+        [MaxLength(128)]
+        public string CustomerId { set; get; }
+
+        public string BankCode { set; get; }
+        public virtual IEnumerable<OrderDetailViewModel> OrderDetails { set; get; }
     }
 }

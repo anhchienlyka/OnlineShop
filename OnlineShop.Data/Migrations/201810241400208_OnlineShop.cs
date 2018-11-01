@@ -3,7 +3,7 @@ namespace OnlineShop.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class IntergrateAspnetIdentity : DbMigration
+    public partial class OnlineShop : DbMigration
     {
         public override void Up()
         {

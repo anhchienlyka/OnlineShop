@@ -8,7 +8,7 @@ namespace OnlineShop.Mode.Abstract
 {
    public interface IAuditable
     {
-        DateTime? CreateDate { set; get; }
+        DateTime? CreateDate { set ; get; }
         string CreateBy { set; get; }
         DateTime? UpdateDate { set; get; }
         string UpdateBy { set; get; }

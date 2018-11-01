@@ -64,25 +64,13 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201809270949447_InitialDB.cs" />
-    <Compile Include="Migrations\201809270949447_InitialDB.Designer.cs">
-      <DependentUpon>201809270949447_InitialDB.cs</DependentUpon>
+    <Compile Include="Migrations\201810290142330_AdđB.cs" />
+    <Compile Include="Migrations\201810290142330_AdđB.Designer.cs">
+      <DependentUpon>201810290142330_AdđB.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810091524428_AddErrorTable.cs" />
-    <Compile Include="Migrations\201810091524428_AddErrorTable.Designer.cs">
-      <DependentUpon>201810091524428_AddErrorTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810091527240_AddFeedbackTable.cs" />
-    <Compile Include="Migrations\201810091527240_AddFeedbackTable.Designer.cs">
-      <DependentUpon>201810091527240_AddFeedbackTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810121018454_Intergrate-AspnetIdentity.cs" />
-    <Compile Include="Migrations\201810121018454_Intergrate-AspnetIdentity.Designer.cs">
-      <DependentUpon>201810121018454_Intergrate-AspnetIdentity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810130503123_InitialCreate.cs" />
-    <Compile Include="Migrations\201810130503123_InitialCreate.Designer.cs">
-      <DependentUpon>201810130503123_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201810291648191_UpdateDBB.cs" />
+    <Compile Include="Migrations\201810291648191_UpdateDBB.Designer.cs">
+      <DependentUpon>201810291648191_UpdateDBB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OnlineShopDBContext.cs" />
@@ -128,23 +116,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809270949447_InitialDB.resx">
-      <DependentUpon>201809270949447_InitialDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810091524428_AddErrorTable.resx">
-      <DependentUpon>201810091524428_AddErrorTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810091527240_AddFeedbackTable.resx">
-      <DependentUpon>201810091527240_AddFeedbackTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810121018454_Intergrate-AspnetIdentity.resx">
-      <DependentUpon>201810121018454_Intergrate-AspnetIdentity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810130503123_InitialCreate.resx">
-      <DependentUpon>201810130503123_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <COMReference Include="mscoree">
       <Guid>{5477469E-83B1-11D2-8B49-00A0C9B7C9C4}</Guid>
       <VersionMajor>2</VersionMajor>
@@ -154,6 +125,14 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810290142330_AdđB.resx">
+      <DependentUpon>201810290142330_AdđB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810291648191_UpdateDBB.resx">
+      <DependentUpon>201810291648191_UpdateDBB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

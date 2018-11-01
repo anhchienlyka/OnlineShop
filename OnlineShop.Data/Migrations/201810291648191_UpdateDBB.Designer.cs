@@ -7,13 +7,13 @@ namespace OnlineShop.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddFeedbackTable : IMigrationMetadata
+    public sealed partial class UpdateDBB : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddFeedbackTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateDBB));
         
         string IMigrationMetadata.Id
         {
-            get { return "201810091527240_AddFeedbackTable"; }
+            get { return "201810291648191_UpdateDBB"; }
         }
         
         string IMigrationMetadata.Source

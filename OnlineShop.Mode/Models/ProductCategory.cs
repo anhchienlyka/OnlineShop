@@ -13,14 +13,13 @@ namespace OnlineShop.Mode.Models
    public class ProductCategory : Auditable
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]//thuoc tinh tu dong tang cho ID
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]//thuoc tinh tu dong tang cho ID
         public int ID { set; get; }
         [Required]
         [MaxLength(256)]
         public string Name { set; get; }
         [Required]
         [MaxLength(256)]
-
         public string Alias { set; get; }
         [MaxLength(500)]
         public string Description { set; get; }
